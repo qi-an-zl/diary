@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音频播放页面</title>
+    <link rel="stylesheet" href="./css/styles_video1.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>银临</h1>
+
+        <!-- 音频播放器 -->
+        <div class="audio-player">
+            <audio controls>
+                <source src="assets/audio2.mp3" type="audio/mpeg">
+                您的浏览器不支持音频播放。
+            </audio>
+        </div>
+
+        <!-- 评价部分 -->
+        <div class="review-section">
+            <h2>评价</h2>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+                <span class="rating-text">4/5</span>
+            </div>
+            <textarea id="review-input" placeholder="写下您的评价..."></textarea>
+            <button onclick="submitReview()">提交评价</button>
+        </div>
+
+        <!-- 感想部分 -->
+        <div class="reflection-section">
+            <h2>我的感想</h2>
+            <textarea id="reflection-input" placeholder="写下您的感想..."></textarea>
+            <button onclick="submitReflection()">保存感想</button>
+        </div>
+    </div>
+
+    <script src="./js/script_video1.js"></script>
+</body>
+</html>

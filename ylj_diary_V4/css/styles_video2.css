@@ -1,0 +1,170 @@
+/* 全局样式 */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background-image: url('../assets/background.jpg'); /* 设置全局背景图片 */
+  background-size: cover; /* 背景图片铺满全局 */
+  background-position: center; /* 背景居中 */
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95); /* 半透明背景 */
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #444;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #007bff; /* 标题颜色更突出 */
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 10px;
+  color: #555;
+}
+
+/* 视频播放器样式 */
+.video-player {
+  margin: 20px 0;
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px; /* 圆角 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 评价部分样式 */
+.review-section {
+  margin: 20px 0;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px; /* 圆角 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.star {
+  font-size: 28px;
+  color: #ffcc00;
+  transition: color 0.3s ease;
+}
+
+.star:hover {
+  color: #ff9900;
+  cursor: pointer;
+}
+
+.rating-text {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+textarea {
+  width: 95%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 2px solid #ccc;
+  border-radius: 10px; /* 圆角 */
+  font-size: 1.1em;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  height: 50px; /* 设置固定高度 */
+}
+
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #dcb2f4;
+  color: white;
+  border: none;
+  border-radius: 10px; /* 圆角 */
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ed77e1;
+  transform: scale(1.02);
+}
+
+/* 感想部分样式 */
+.reflection-section {
+  margin: 20px 0;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px; /* 圆角 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reflection-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+/*链接样式*/
+.links {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.links a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #dcb2f4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #dcb2f4;
+}

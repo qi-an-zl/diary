@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>带表格的 HTML</title>
+    <style>
+        /* 页面背景图样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('./assets/background.jpg'); /* 替换为你的背景图 URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 虚化背景容器 */
+        .blur-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: inherit;
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px); /* 虚化效果 */
+            z-index: -1; /* 将背景置于内容下方 */
+        }
+
+        /* 内容容器样式 */
+        .content-container {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        /* 表格容器样式 */
+        .table-container {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* 表头样式 */
+        th {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        /* 表格行样式 */
+        tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* 表格单元格样式 */
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* 交替行背景颜色 */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* 鼠标悬停时行背景颜色变化 */
+        tr:hover {
+            background-color: #d1e7ff;
+        }
+
+        /* 表格标题样式 */
+        .table-title {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 虚化背景 -->
+    <div class="blur-background"></div>
+
+    <!-- 内容容器 -->
+    <div class="content-container">
+        <h1 class="table-title">学生成绩表</h1>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>科目</th>
+                        <th>成绩</th>
+                        <th>日期</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>张三</td>
+                        <td>数学</td>
+                        <td>95</td>
+                        <td>2023-10-01</td>
+                    </tr>
+                    <tr>
+                        <td>李四</td>
+                        <td>语文</td>
+                        <td>88</td>
+                        <td>2023-10-02</td>
+                    </tr>
+                    <tr>
+                        <td>王五</td>
+                        <td>英语</td>
+                        <td>92</td>
+                        <td>2023-10-03</td>
+                    </tr>
+                    <tr>
+                        <td>赵六</td>
+                        <td>物理</td>
+                        <td>85</td>
+                        <td>2023-10-04</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

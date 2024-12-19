@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频播放页面</title>
+    <link rel="stylesheet" href="./css/styles_video1.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>线条小狗1</h1>
+
+        <!-- 视频播放器 -->
+        <div class="video-player">
+            <video controls>
+                <source src="assets/video1.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+        </div>
+
+         <!-- 链接部分 -->
+         <div class="links">
+            <a href="https://www.bilibili.com/video/BV1xF1dYnEJH/?spm_id_from=333.337.search-card.all.click&vd_source=fcf73e3201455bfc67e40e09d1a8413f" target="_blank">相关视频1</a>
+            <a href="https://www.bilibili.com/video/BV14SknYEEUj/?spm_id_from=333.337.search-card.all.click&vd_source=fcf73e3201455bfc67e40e09d1a8413f" target="_blank">相关视频2</a>
+            <a href="https://www.bilibili.com/video/BV1vT421a7Hy/?spm_id_from=333.337.search-card.all.click&vd_source=fcf73e3201455bfc67e40e09d1a8413f" target="_blank">相关视频3</a>
+        </div>
+        <!-- 评价部分 -->
+        <div class="review-section">
+            <h2>评价</h2>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+                <span class="rating-text">4/5</span>
+            </div>
+            <textarea id="review-input" placeholder="写下您的评价..."></textarea>
+            <button onclick="submitReview()">提交评价</button>
+        </div>
+
+        <!-- 感想部分 -->
+        <div class="reflection-section">
+            <h2>我的感想</h2>
+            <textarea id="reflection-input" placeholder="写下您的感想..."></textarea>
+            <button onclick="submitReflection()">保存感想</button>
+        </div>
+        
+    </div>
+    <script src="./js/script_video1.js"></script>
+</body>
+</html>
